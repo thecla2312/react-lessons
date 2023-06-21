@@ -1,0 +1,8 @@
+.third{
+    background-color: #00e1ff;
+    font-size: 15px;
+    flex: auto;
+    border-radius: 0%;
+    align-content: center;
+    justify-content: baseline;
+}
