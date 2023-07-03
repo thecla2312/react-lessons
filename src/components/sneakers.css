@@ -1,0 +1,19 @@
+.delivery{
+    background-attachment: aliceblue;
+    color: green;
+    text-align: center;
+    font-size: 20px;
+}
+.delivery span {
+    color: red;
+}
+.maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.maincontainer button{
+    width: 200px;
+    height: 40px;
+    padding: ;
+}

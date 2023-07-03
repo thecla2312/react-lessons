@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import gamepad from "../assets/images/pad.jpg";
+//react hook
 
-const First = () => {
-    return (
-        <div className="first">
-        <h1>This our first compontent</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                <img
-                    src="https://th.bing.com/th/id/R.e2c188fe750ab9de23f3d1c576342c85?rik=5QldT6qxwXPYVw&pid=ImgRaw&r=0" alt=""
-                />
-        </p>
-       <Second/>
-        </div>
-    )
-}
+const First = ({ firstName }) => {
+  const [age, setAge] = useState(15);
+  const title = "Use State";
+  return (
+    <div>
+      <h1> {title} </h1>
+      <h1>{age}</h1>
+      <button onClick={() => setAge(age + 10)}>Increase AGE</button>
+      <br />
+      <img
+        src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
+        alt=""
+      />
+
+      <img className="gamepad" src={gamepad} alt="" />
+    </div>
+  );
+};
+
 export default First;
